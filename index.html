@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <form id="datecalc">
+    <h3>Калькулятор дат</h3>
+    <label>
+        <strong>Первая дата:</strong>
+        <input type="date" name="firstDate" />
+    </label>
+    <label>
+        <strong>Вторая дата:</strong>
+        <input type="date" name="secondDate" />
+    </label>
+    <button type="submit">Расчитать промежуток</button>
+    <p id="datecalc__result"></p>
+  </form>
+
+  <form id="timer" class="visibility">
+      <h3>Таймер</h3>
+      <label>
+          <strong>Введи количество минут</strong>
+          <input type="time" name="timerInput" step="1">
+          <p id="timer_result"></p>
+      </label>
+      <button type="submit">запустить таймер</button>
+      <button type="reset">остановить таймер</button>
+      <button id = 'stop_timer'> остановить музыку</button>
+  </form>
+  <button class="switchBtn">Калькулятор\Таймер</button>
+
+  <!-- <script src="node_modules/howler/dist/howler.js"></script> -->
+</body>
+</html>
+
+<!-- import { DateTime } from 'https://moment.github.io/luxon/es6/luxon.min.js'; -->
